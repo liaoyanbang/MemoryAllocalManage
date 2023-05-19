@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/main.dir/src/memory.c.o CMakeFiles/main.dir/src/mian.c.o -o main  -lm -lpthread 

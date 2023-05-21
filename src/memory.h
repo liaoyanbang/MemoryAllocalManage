@@ -10,6 +10,14 @@
 #define TYPE3_SIZE (4096)
 #define TYPE3_COUNT (10)
 
+typedef enum type_memory
+{
+    TYPE_SMALL = 0,
+    TYPE_MIDDLE,
+    TYPE_HUGE,
+    //TODO
+    TYPE_NUM,
+} type_memory_t;
 
 typedef struct memory_node
 {
@@ -32,14 +40,6 @@ typedef struct memory
     void* memory_max_addr;
     void* memory_min_addr;
 } memory_t;
-
-typedef enum type_memory
-{
-    TYPE_SMALL = 0,
-    TYPE_MIDDLE,
-    TYPE_HUGE,
-    TYPE_NUM,
-} type_memory_t;
 
 void* Memory_Allocal_Get(type_memory_t type);
 uint32_t Memory_Allocal_Release(void** addr);

@@ -13,6 +13,10 @@ stdint.h
 /workspace/MemoryAllocalManage/src/mian.c
 stdio.h
 -
+signal.h
+-
+stdlib.h
+-
 memory.h
 /workspace/MemoryAllocalManage/src/memory.h
 

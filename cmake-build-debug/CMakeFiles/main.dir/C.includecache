@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/workspace/MemoryAllocalManage/src/memory.c
-memory.h
-/workspace/MemoryAllocalManage/src/memory.h
-stdio.h
--
-stdlib.h
--
-stdint.h
--
-
 /workspace/MemoryAllocalManage/src/memory.h
 stdint.h
 -

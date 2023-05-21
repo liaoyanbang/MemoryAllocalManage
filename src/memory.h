@@ -3,7 +3,6 @@
 
 #include <stdint.h>
 
-#define TYPE_NUM (3)
 #define TYPE1_SIZE (64)
 #define TYPE1_COUNT (50)
 #define TYPE2_SIZE (512)
@@ -30,9 +29,20 @@ typedef struct memory
     memory_list_t memory_list;
     uint32_t memory_size;
     uint32_t memory_count;
+    void* memory_max_addr;
+    void* memory_min_addr;
 } memory_t;
 
+typedef enum type_memory
+{
+    TYPE_SMALL = 0,
+    TYPE_MIDDLE,
+    TYPE_HUGE,
+    TYPE_NUM,
+} type_memory_t;
+
+void* Memory_Allocal_Get(type_memory_t type);
+uint32_t Memory_Allocal_Release(void** addr);
 uint32_t Memory_Allocal_Manage_Init(void);
 uint32_t Memory_Allocal_Manage_Deinit(void);
-
 #endif
